@@ -10,7 +10,7 @@ File description:
 
 main_iii.ipynb: main fuction for phase III
 
-main_iv.ipynb: main fuction for phase V
+main_v.ipynb: main fuction for phase V
 
 CNN_Modules_1D.py:  CNN function for 1D data
 
