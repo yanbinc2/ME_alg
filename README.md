@@ -1,8 +1,8 @@
 #=============================================================
-### ME Algorithm 2023 (ME_alg)
-### CNN function for 1D
-### Yan-Bin Chen (陳彥賓)  yanbin@stat.sinica.edu.tw
-### Institute of Statistical Science, Academia Sinica, Taipei, Taiwan. Aug, 2023 
+#### ME Algorithm 2023 (ME_alg)
+#### CNN function for 1D
+#### Yan-Bin Chen (陳彥賓)  yanbin@stat.sinica.edu.tw
+#### Institute of Statistical Science, Academia Sinica, Taipei, Taiwan. Aug, 2023 
 
 
 
