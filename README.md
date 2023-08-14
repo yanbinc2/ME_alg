@@ -1,6 +1,5 @@
 #==========================================================
-#### ME Algorithm 2023 (ME_alg)
-#### CNN function for 1D
+#### Phase III and Phase V for ME Algorithm, 2023
 #### Yan-Bin Chen (陳彥賓)  yanbin@stat.sinica.edu.tw
 #### Institute of Statistical Science, Academia Sinica, Taipei, Taiwan. Aug, 2023 
 #==========================================================
