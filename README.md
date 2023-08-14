@@ -20,7 +20,7 @@ CNN_Modules.py:  CNN function for 2D data
 data.zip: iuput data (download from specific place https://www.dropbox.com/sh/9citjss0waz25zd/AADcjlzm-Mz4swQrMTUSyvF_a?dl=0)
 
 #
-Execute procedure
+Execute procedures
 
 #
 Phase III: 
