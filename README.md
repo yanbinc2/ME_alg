@@ -2,7 +2,7 @@
 ME algorithm for phase III and phase IV
 
 file description:
-main_iii.ipynb: main fuction for phase III
+main_iii.ipynb: main fuction for phase III \\
 main_iv.ipynb: main fuction for phase V
 CNN_Modules_1D.py:  CNN function for 1D data
 CNN_Modules.py:  CNN function for 2D data
