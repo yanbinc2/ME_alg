@@ -2,7 +2,7 @@
 # ME Algorithm 2023
 # CNN function for 1D
 # Yan-Bin Chen (陳彥賓)  yanbin@stat.sinica.edu.tw
-# Institute of Statistical Science, Academia Sinica, Taipei, Taiwan. &emsp;&emsp; Aug, 2023 
+# Institute of Statistical Science, Academia Sinica, Taipei, Taiwan. Aug, 2023 
 
 
 def ME_CNN(x_train, train_label, test_array, true_answer, Num_Classes):  
