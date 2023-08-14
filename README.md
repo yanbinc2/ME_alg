@@ -17,8 +17,8 @@ data.zip: iuput data (download from specific place https://www.dropbox.com/sh/9c
 Execute procedure
 
 Phase III: 
-1. Unzip file data.zip. This zip is 200m which is too large to deposit in the githup. You may download it from the specific place mentioned above.
-2. Run main_iii.ipynb. The input files are in the ./data
+1. Unzip file "data.zip". This zip is 200m which is too large to deposit in the githup. You may download it from the specific place mentioned above.
+2. Run "main_iii.ipynb". The input files are in the ./data
 3. It will output several immediate pickle files and three mat files, as follows. Those three mat files if for next phase IV.
    "results_of_original.mat"
    "results_of_combination.mat"
@@ -26,6 +26,7 @@ Phase III:
 
 
 Phase V: 
-1. Unzip file data.zip. The same procedure with step 1 in Phase III.
-2. Run main_v.ipynb. The input files are in the ./data
-3. It will output accu_history.csv
+1. Unzip "file data.zip". The same procedure with step 1 in Phase III.
+2. Run "main_v.ipynb". The input files are in the folder ./data
+3. It will output "accu_history.csv"
+4. Run "Split_accuracy_into_6_criterions.ipynb". It will output 6 accuracy criterions. 
