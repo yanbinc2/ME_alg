@@ -5,10 +5,7 @@
 #### Institute of Statistical Science, Academia Sinica, Taipei, Taiwan. Aug, 2023 
 #==========================================================
 #
-#
 ME algorithm for phase III and phase V
-
-#
 #
 File description:
 
