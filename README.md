@@ -7,7 +7,7 @@
 (a) File description:
 1. main_phase3.ipynb: 
   function:　The main fuction for the phase 3 of ME algorithm.
-  
+
   Input: Following files specified by the path are the input data.
   PATH1='./Data/NCT_VGG16_K200_seedinds_version2_valid.txt'  -->  This is the seed regions given by the phase 2.
   PATH2='./Data/NCT_VGG16_K200_bilabels_version2.txt'  --> This is the file given by phase 2 to indicate which labels are effective.
