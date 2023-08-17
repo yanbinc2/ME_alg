@@ -7,7 +7,7 @@
 (a) File description:
 1. "main_phase3.ipynb"
 
-   Function: The main fuction for the phase 3 of ME algorithm.
+   Function: The main function for the phase 3 of ME algorithm.
 
    Input: Following files specified by the path are the input data. These files are the examples. The users may have their own input data. 
    
@@ -17,7 +17,7 @@
   
        PATH3='./Data/VGG16_CRC_100K_tSNE_Spec.csv'  --> To specify the region index.
   
-       PATH4='./Data/NCT_VGG16_K200_neighborregions_version2_valid.txt'  --> To specify the neighborregions of seed regions.
+       PATH4='./Data/NCT_VGG16_K200_neighborregions_version2_valid.txt'  --> To specify the neighbor regions of seed regions.
   
        PATH5='./Data/20230106_NCT_Vgg16_test_label.pickle'  --> This is the embedded data.
   
@@ -27,13 +27,13 @@
 
 2. "main_phase5.ipynb"
 
-    Function: The main fuction for phase 5 of the ME algorithm.
+    Function: The main function for phase 5 of the ME algorithm.
   
     Input: Following files specified by the path are the input data. These files are the examples. The users may have their own input data. 
 
        PATH3='./Data/VGG16_CRC_100K_tSNE_Spec.csv'--> To specify the region index.
   
-       PATH5='./Data/20230106_NCT_Vgg16_test_label.pickle' --> This is the true lables for the accuracy evaluation.
+       PATH5='./Data/20230106_NCT_Vgg16_test_label.pickle' --> This is the true labels for the accuracy evaluation.
   
        PATH6='./Data/NCT_VGG16_K200_mergedseedclasslabels_version2.txt' --> This is the merged results given by the phase 4.
   
@@ -51,5 +51,5 @@
 1. Run the Phase 2, which is "generate_seedregions_package.m" to generate the seed regions.
 2. Run "main_phase3.ipynb" to get 4 scores. It will output several immediate pickle files and three mat files. Three mat files are the inputs for next phase 4, which are "results_of_original.mat", "results_of_combination.mat" and "results_of_removal.mat".
 3. Run the Phase 4, which is  "merge_seedregions_package.m" to get merged tables.
-4. Run "main_phase5.ipynb" to obtain the cluster reults. It will output "accu_history.csv".
+4. Run "main_phase5.ipynb" to obtain the cluster results. It will output "accu_history.csv".
 
