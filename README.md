@@ -36,7 +36,7 @@
 
 3. "phase4_merge_seedregions_package.m"
 
-    Function: merge seed regions according to the three predicted files (mat files).
+    Function: merge seed regions according to the three CNN predicted results (mat files).
 
     Inputs: information about regions and seed regions, prediction outcomes.
 
