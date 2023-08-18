@@ -18,7 +18,7 @@
 
    Function: generate three CNN predicted results, "original", "combinational" and "removal" in MATLAB format for the evaluation of four scores.
 
-   Inputs: following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. Users can input their own data based on their specific applications.
+   Inputs: following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. The User can input their own data based on their specific applications.
    
        PATH1='./Data/NCT_VGG16_K200_seedinds_version2_valid.txt'  -->  This is the seed regions given by the phase 2.
   
@@ -38,7 +38,7 @@
 
     Function: merge seed regions according to the three CNN predicted results (mat files).
 
-    Inputs: information about regions and seed regions, prediction outcomes, and thresholds. The thresholds are predefined to stop the merging procedure. User may check them in the descriptions of the codes.
+    Inputs: information about regions and seed regions, prediction outcomes, and thresholds. The thresholds are predefined to stop the merging procedure. The users may check them in the descriptions of the codes.
 
     Outputs: identities of merged seed regions.
 
@@ -46,7 +46,7 @@
 
     Function: merges seed regions, then expands seed regions iteratively.
   
-    Inputs: following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. Users can input their own data based on their specific applications. 
+    Inputs: following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. The users can input their own data based on their specific applications. 
 
        PATH3='./Data/VGG16_CRC_100K_tSNE_Spec.csv'--> This is the data file to specify the region index.
   
