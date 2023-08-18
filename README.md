@@ -8,9 +8,9 @@
 1. "generate_seedregions_package.m". This is the code to generate the seed regions.
 2. "phase3.ipynb"
 
-   Function: This code generates three predicted results in the type of matlab for the evaluation of 4 scores.
+   Function: This code generates three predicted results in MATLAB format for the evaluation of four scores.
 
-   Input: Following files specified by the path are the input data. The files presented here are the examples. The users may have their own input data.
+   Input: Following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. Users can input their own data based on their specific applications.
    
        PATH1='./Data/NCT_VGG16_K200_seedinds_version2_valid.txt'  -->  This is the seed regions given by the phase 2.
   
@@ -31,7 +31,7 @@
 
     Function: This code merges seed regions, then expands seed regions iteratively.
   
-    Input: Following files specified by the path are the input data. The files presented here are the examples. The users may have their own input data. 
+    Input: Following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. Users can input their own data based on their specific applications. 
 
        PATH3='./Data/VGG16_CRC_100K_tSNE_Spec.csv'--> This is the data file to specify the region index.
   
