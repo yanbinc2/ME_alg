@@ -10,7 +10,7 @@
 
     Function: generate seed regions from the input data.
 
-    Inputs: embeded data, region labels, several free parameters.
+    Inputs: embeded data, region labels, several free parameters, and thresholds. The thresholds are predefined to stop the selection of seed region candidates. If the replacement score is below a threshold, then skip it and consider the next candidate.
   
     Outputs: indices of seed regions and the valid image labels in all regions.
 
@@ -38,7 +38,7 @@
 
     Function: merge seed regions according to the three CNN predicted results (mat files).
 
-    Inputs: information about regions and seed regions, prediction outcomes.
+    Inputs: information about regions and seed regions, prediction outcomes, and thresholds. The thresholds are predefined to stop the merging procedure. User may check them in the descriptions of the codes.
 
     Outputs: identities of merged seed regions.
 
