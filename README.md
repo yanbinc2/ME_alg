@@ -10,13 +10,13 @@
 
     Function: generate seed regions from the input data.
 
-    Inputs: embeded data, region labels, several free parameters, and thresholds. The thresholds are predefined to stop the selection of seed region candidates. If the replacement score is below a threshold, then skip it and consider the next candidate.
+    Inputs: embedded data, region labels, several free parameters, and thresholds. The thresholds are predefined to stop the selection of seed region candidates. If the replacement score is below a threshold, then skip it and consider the next candidate.
   
     Outputs: indices of seed regions and the valid image labels in all regions.
 
 2. "phase3_three_predicted_results.ipynb"
 
-   Function: generate three CNN predicted results, "orginal", "combinational" and "removal" in MATLAB format for the evaluation of four scores.
+   Function: generate three CNN predicted results, "original", "combinational" and "removal" in MATLAB format for the evaluation of four scores.
 
    Inputs: following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. Users can input their own data based on their specific applications.
    
