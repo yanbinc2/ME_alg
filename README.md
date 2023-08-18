@@ -5,9 +5,8 @@
 #==========================================================
 #
 (a) File description:
-1. "generate_seedregions_package.m"
-   Function: 
-1. "phase3.ipynb"
+1. "generate_seedregions_package.m". This is the code to generate the seed regions.
+2. "phase3.ipynb"
 
    Function: This code generates three predicted results in the type of matlab for the evaluation of 4 scores.
 
@@ -23,11 +22,12 @@
   
        PATH5='./Data/20230106_NCT_Vgg16_test_label.pickle'  --> This is the embedded data.
   
-    Output: It will output three files for the 4 scores evaluation in the following phase 4. They are "results_of_original.mat"
+    Output: It will output three predicted files for the 4 scores evaluation in the following phase 4. They are "results_of_original.mat"
   "results_of_combination.mat", and "results_of_removal.mat".
 
 
-2. "phase5.ipynb"
+3. "phase4_merge_seedregions_package.m". This is the code to merge the seed regions according to the three predicted files (mat files).
+4. "phase5.ipynb"
 
     Function: This code merges seed regions, then expands seed regions iteratively.
   
@@ -43,9 +43,9 @@
   
     Output: It will output the accuracy table.
 
-3. "CNN_Modules_1D.py" --> This is the module file (function call) for the 1D CNN.
+5. "CNN_Modules_1D.py" --> This is the module file (function call) for the 1D CNN.
 
-5. "CNN_Modules.py" --> This is the module file (function call) for the 2D CNN.
+6. "CNN_Modules.py" --> This is the module file (function call) for the 2D CNN.
 
 
 #
