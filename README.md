@@ -1,16 +1,23 @@
 #==========================================================
 #### ME Algorithm, 2023
-#### Yan-Bin Chen (陳彥賓)  yanbin@stat.sinica.edu.tw; Chen-Hsiang Yeang   chyeang@stat.sinica.edu.tw
+#### Yan-Bin Chen (陳彥賓)  yanbin@stat.sinica.edu.tw; Chen-Hsiang Yeang (楊振翔)   chyeang@stat.sinica.edu.tw
 #### Institute of Statistical Science, Academia Sinica, Taipei, Taiwan. August, 2023 
 #==========================================================
 #
 (a) File description:
-1. "generate_seedregions_package.m". This is the code to generate the seed regions.
-2. "phase3.ipynb"
+1. "phase2_generate_seedregions_package.m"
 
-   Function: This code generates three predicted results in MATLAB format for the evaluation of four scores.
+    Function: generate seed regions from the input data.
 
-   Input: Following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. Users can input their own data based on their specific applications.
+    Inputs: embeded data, region labels, several free parameters.
+  
+    Outputs: indices of seed regions and the valid image labels in all regions.
+
+2. "phase3_three_predicted_results.ipynb"
+
+   Function: generate three CNN predicted results, "orginal", "combinational" and "removal" in MATLAB format for the evaluation of four scores.
+
+   Inputs: following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. Users can input their own data based on their specific applications.
    
        PATH1='./Data/NCT_VGG16_K200_seedinds_version2_valid.txt'  -->  This is the seed regions given by the phase 2.
   
@@ -22,16 +29,23 @@
   
        PATH5='./Data/20230106_NCT_Vgg16_test_label.pickle'  --> This is the embedded data.
   
-    Output: It will output three predicted files for the 4 scores evaluation in the following phase 4. They are "results_of_original.mat"
+    Outputs: output three CNN predicted files for the four scores evaluation. They are "results_of_original.mat"
   "results_of_combination.mat", and "results_of_removal.mat".
 
 
-3. "phase4_merge_seedregions_package.m". This is the code to merge the seed regions according to the three predicted files (mat files).
-4. "phase5.ipynb"
+3. "phase4_merge_seedregions_package.m"
 
-    Function: This code merges seed regions, then expands seed regions iteratively.
+    Function: merge seed regions according to the three predicted files (mat files).
+
+    Inputs: information about regions and seed regions, prediction outcomes.
+
+    Outputs: identities of merged seed regions.
+
+4. "phase5_merge_then_expand.ipynb"
+
+    Function: merges seed regions, then expands seed regions iteratively.
   
-    Input: Following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. Users can input their own data based on their specific applications. 
+    Inputs: following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. Users can input their own data based on their specific applications. 
 
        PATH3='./Data/VGG16_CRC_100K_tSNE_Spec.csv'--> This is the data file to specify the region index.
   
@@ -41,7 +55,7 @@
   
        PATH7='./Data/region_for_phaseIV.pickle'  --> This is the file to setup the initial conditions.
   
-    Output: It will output the accuracy table.
+    Outputs: output the accuracy table.
 
 5. "CNN_Modules_1D.py" --> This is the module file (function call) for the 1D CNN.
 
