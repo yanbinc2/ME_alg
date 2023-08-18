@@ -5,7 +5,7 @@
 #### August, 2023 
 #==========================================================
 #
-(a) File description:
+(a) File descriptions:
 1. "phase2_generate_seedregions_package.m"
 
     Function: generate seed regions from the input data.
