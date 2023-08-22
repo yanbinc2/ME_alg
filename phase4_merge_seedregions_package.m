@@ -28,6 +28,7 @@
 
 function [nmergeoutcomes, mergedclasslabels] = merge_seedregions_package(nseeds, seedinds, result_for_original, prob_for_original, combination_pairs, result_for_merge, result_for_removal, data, markerranks, regionneighborlabels, regionpairD, regiontraininglabels, seedmarkergroupindicators, npartitionnodes, partitionnodes, usemarker, nprednumthre, pvalthre, nothersthre, cssizethre, ntoprankthre, quantilethre, nneighborsconsidered, ttestpvalthre, nuniquemarkersthre, importthre, replacementratiothre, localranksumpvalthre, cocontributionthre, reducedrankscorethre, confusionratiothre, ndiffthre, Hdthre, rankthre, datavalthre, datavaldiffthre, foldthre, cntthre, gapthre, maxgapcntthre, gapcntdiffthre, sizethre, jumpfoldthre, smallclustersizethre, gapfoldthre, smallratiothre, pdiffthre, pdiffthre2, medvalthre, ninformativemarkersthre, ninformativemarkersthre2, cntdiffthre)
 
+% Inputs:
 % nseeds: number of seeds.
 % seedinds: individual seeds.
 % result_for_original, prob_for_original, combination_pairs, result_for_merge, result_for_removal, data: input data from phase 3.
