@@ -10,7 +10,7 @@
 
     Function: generate seed regions from the input data.
 
-    Inputs: embedded data, region labels, several free parameters, and thresholds. The thresholds are predefined to stop the selection of seed region candidates. If the replacement score is below a threshold, then skip it and consider the next candidate.
+    Inputs: embedded data, region labels, several free parameters, and thresholds. The thresholds are predefined to stop the selection of seed region candidates. If the replacement score is below a threshold, then skip it and consider the next candidate. Details for each parameter are described in the code.
   
     Outputs: indices of seed regions and the valid image labels in all regions.
 
@@ -38,7 +38,7 @@
 
     Function: merge seed regions according to the three CNN predicted results (mat files).
 
-    Inputs: information about regions and seed regions, prediction outcomes, and thresholds. The thresholds are predefined to stop the merging procedure. The users may check them in the descriptions of the codes.
+    Inputs: information about regions and seed regions, prediction outcomes, and thresholds. The thresholds are predefined to stop the merging procedure. Details for each parameter are described in the code.
 
     Outputs: identities of merged seed regions.
 
@@ -65,6 +65,11 @@
 6. "CNN_Modules.py"
 
     Function: function call for the 2D CNN.
+   
+7. "functions.zip"
+
+    Function: This is a zip file which includes accessory functions and parameters for "phase2_generate_seedregions_package.m" and "phase4_merge_seedregions_package.m". Users may unzip this zip file into the samae directory of "phase2_generate_seedregions_package.m" and "phase4_merge_seedregions_package.m".
+
 #
 (b) Execution procedures:
 1. Run "phase2_generate_seedregions_package.m" to generate the seed regions.
