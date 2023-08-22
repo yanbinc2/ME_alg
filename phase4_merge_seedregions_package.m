@@ -28,6 +28,20 @@
 
 function [nmergeoutcomes, mergedclasslabels] = merge_seedregions_package(nseeds, seedinds, result_for_original, prob_for_original, combination_pairs, result_for_merge, result_for_removal, data, markerranks, regionneighborlabels, regionpairD, regiontraininglabels, seedmarkergroupindicators, npartitionnodes, partitionnodes, usemarker, nprednumthre, pvalthre, nothersthre, cssizethre, ntoprankthre, quantilethre, nneighborsconsidered, ttestpvalthre, nuniquemarkersthre, importthre, replacementratiothre, localranksumpvalthre, cocontributionthre, reducedrankscorethre, confusionratiothre, ndiffthre, Hdthre, rankthre, datavalthre, datavaldiffthre, foldthre, cntthre, gapthre, maxgapcntthre, gapcntdiffthre, sizethre, jumpfoldthre, smallclustersizethre, gapfoldthre, smallratiothre, pdiffthre, pdiffthre2, medvalthre, ninformativemarkersthre, ninformativemarkersthre2, cntdiffthre)
 
+% nseeds: number of seeds.
+% seedinds: individual seeds.
+% result_for_original, prob_for_original, combination_pairs, result_for_merge, result_for_removal, data: input data from phase 3.
+% markerranks: reserved. Useless.
+% regionneighborlabels: regional neighbor labels
+% regionpairD:  reserved. useless.
+% regiontraininglabels: regional training labels
+% seedmarkergroupindicators: the indicators to find the members in each component which are very distinct from other members within the same component.
+% npartitionnodes: reserved. Useless.
+% partitionnodes: reserved. Useless.
+% usemarker: whether use markers or not.
+% nprednumthre, pvalthre, nothersthre, cssizethre, ntoprankthre, quantilethre, nneighborsconsidered, ttestpvalthre, nuniquemarkersthre, importthre, replacementratiothre, localranksumpvalthre, cocontributionthre, reducedrankscorethre, confusionratiothre, ndiffthre, Hdthre, rankthre, datavalthre, datavaldiffthre, foldthre, cntthre, gapthre, maxgapcntthre, gapcntdiffthre, sizethre, jumpfoldthre, smallclustersizethre, gapfoldthre, smallratiothre, pdiffthre, pdiffthre2, medvalthre, ninformativemarkersthre, ninformativemarkersthre2, cntdiffthre: several threholds. Please check the mathematical explanations in the paper.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Calculate four types of scores regarding evidence of merging seed regions.

@@ -21,7 +21,14 @@
 
 function [nseeds, seedinds, bilabels, regionpairD] = generate_seedregions_package(data, augdata, embeddata, datamode, regionneighborlabels, filter, theta, theta2, theta3, sizethre, topthre, nimagesthre, mthre, lwdthre, uppthre, nmarkersthre, rankthre, rankratiothre, disparitythre, overlapthre, highthre, dthre, sharedthre, nnbsthre, nvalidnbsthre, rthre, regionpairDmode, maxnseeds, ratiothre, foldthre, nclassesthre, diffratiothre, nconsecutivesthre)
 
-
+% Inputs:
+% data, augdata, embeddata: The input data.
+% datamode: datamode=1: Use data to generate seed regions; datamode=2: Use embedded projections of data to generate seed regions.
+% regionneighborlabels: the lables for the regional neighbors
+% filter: Incorporate geometric information and other information to filter images. Details are described at the beginning of the function.
+% regionpairDmode: switch to the regional neighbor or regional training.
+% maxnseeds: maximum number of seeds
+% theta, theta2, theta3, sizethre, topthre, nimagesthre, mthre, lwdthre, uppthre, nmarkersthre, rankthre, rankratiothre, disparitythre, overlapthre, highthre, dthre, sharedthre, nnbsthre, nvalidnbsthre, rthre , ratiothre, foldthre, nclassesthre, diffratiothre, nconsecutivesthre: several threholds. Please check the mathematical explanations in the paper.
 [nimages,ndim]=size(data);
 
 
