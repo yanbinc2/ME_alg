@@ -93,20 +93,30 @@
 
    Function: generate three CNN predicted results, "original", "combinational" and "removal" in MATLAB format for the evaluation of four scores.
 
-   Inputs: following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. The User can input their own data based on their specific applications.
+   Inputs: following files specified by the path are the input data. The input files presented here are provided as examples for instructional guidance. The User can input their own input data based on their applications.
    
-       PATH1='./Data/NCT_VGG16_K200_seedinds_version2_valid.txt'  -->  This is the seed regions given by the phase 2.
+       PATH1='./Data/NCT_VGG16_K200_seedinds_version2_valid.txt'  -->  the seed regions ("seedinds") given by the phase 2. 
   
-       PATH2='./Data/NCT_VGG16_K200_bilabels_version2.txt'  --> This is the data file to indicate which labels are effective given by phase 2.
+       PATH2='./Data/NCT_VGG16_K200_bilabels_version2.txt'  --> the data file to indicate which labels ("bilabels") are effective given by phase 2.
   
-       PATH3='./Data/VGG16_CRC_100K_tSNE_Spec.csv'  --> This is the data file to specify the region index.
+       PATH3='./Data/VGG16_CRC_100K_tSNE_Spec.csv'  --> the data file to specify the entire region indices.
   
-       PATH4='./Data/NCT_VGG16_K200_neighborregions_version2_valid.txt'  --> This is the data file to specify the neighboring regions of seed regions.
+       PATH4='./Data/NCT_VGG16_K200_neighborregions_version2_valid.txt'  --> to specify the neighboring regions of seed regions.
   
-       PATH5='./Data/20230106_NCT_Vgg16_test_label.pickle'  --> This is the embedded data.
+       PATH5='./Data/20230106_NCT_Vgg16_test_label.pickle'  --> the embedded data.
+
+       TRIALS: the number of trials for the CNN. Usually, set to 1.
+   
+       timestr: the prompt for the output file.
+
   
-    Outputs: output three CNN predicted files for the four scores evaluation. They are "results_of_original.mat"
-  "results_of_combination.mat", and "results_of_removal.mat".
+    Outputs: output three CNN predicted files for the four scores evaluation, as follows:
+   
+       results_of_original.mat  --> the predicted results of original CNN.
+
+       results_of_combination.mat  --> the predicted results of combinatorial CNN. 
+
+       results_of_removal.mat  --> the predicted results of removal CNN.
 
 
 3. "phase4_merge_seedregions_package.m"
@@ -193,15 +203,23 @@
   
     Inputs: following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. The users can input their own data based on their specific applications. 
 
-       PATH3='./Data/VGG16_CRC_100K_tSNE_Spec.csv'--> This is the data file to specify the region index.
+       PATH3='./Data/VGG16_CRC_100K_tSNE_Spec.csv'--> the data file to specify the entire region index.
   
-       PATH5='./Data/20230106_NCT_Vgg16_test_label.pickle' --> This is the true labels for the accuracy evaluation.
+       PATH5='./Data/20230106_NCT_Vgg16_test_label.pickle' --> the true labels for the accuracy evaluation.
   
-       PATH6='./Data/NCT_VGG16_K200_mergedseedclasslabels_version2.txt' --> This is the merged results given by the phase 4.
+       PATH6='./Data/NCT_VGG16_K200_mergedseedclasslabels_version2.txt' --> the merged results ("nmergeoutcomes" and "mergedclasslabels") given by the phase 4.
   
-       PATH7='./Data/region_for_phaseIV.pickle'  --> This is the file to setup the initial conditions.
+       PATH7='./Data/region_for_phaseIV.pickle'  --> the initial conditions.
+
+       NUM_CASE: to indicate how many cases in the merged seed regions outcomes.
+
+       DATASET: to specify the datasets.
+   
+       INTE_bool: the switch to specify the intergration netwrok mode or single network mode.
+   
+       ITE_FROM: the start point of the loop. This is for the special case or debugging.
   
-    Outputs: output the accuracy table.
+    Outputs: output the accuracy tables.
 
 5. "CNN_Modules_1D.py"
 
