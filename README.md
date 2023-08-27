@@ -8,7 +8,7 @@
 (a) File descriptions:
 1. "phase2_generate_seedregions_package.m"
 
-    Function: the Matlab program of selecting seed regions from the data.
+    Function: the Matlab program of selecting seed regions from the data. The default parameter values of running this code are provided in "MNIST_generate_seedregions_params.txt" and "CIFAR10_generate_seedregions_params.txt" for MNIST and CIFAR10 datasets, respectively.
 
     Inputs: embedded data, region labels, several free parameters, and thresholds. The thresholds are predefined to stop the selection of seed region candidates. Details for each parameter are described as follows.
 
@@ -91,9 +91,9 @@
 
 2. "phase3_three_predicted_results.ipynb"
 
-   Function: generate three CNN predicted results, "original", "combinational" and "removal" in MATLAB format for the evaluation of four scores.
+   Function: the python code of generating three CNN predicted results, "original", "combinational" and "removal" for the evaluation of four scores.
 
-   Inputs: following files specified by the path are the input data. The input files presented here are provided as examples for instructional guidance. The User can input their own input data based on their applications.
+   Inputs: following files specified by the path are the input data. The input files presented here are provided as examples for instructional guidance. The users can input their own data based on their applications.
    
        PATH1='./Data/NCT_VGG16_K200_seedinds_version2_valid.txt'  -->  the seed regions ("seedinds") given by the phase 2. 
   
@@ -121,7 +121,7 @@
 
 3. "phase4_merge_seedregions_package.m"
 
-    Function: the Matlab program of merging seed regions according to three combinatorial classification outcomes (mat files).
+    Function: the Matlab program of merging seed regions according to three combinatorial classification outcomes (.mat files). The default parameter values of running this code are provided in "MNIST_merge_seedregions_params.txt" and "CIFAR10_merge_seedregions_params.txt" for MNIST and CIFAR10 datasets, respectively.
 
     Inputs: information about regions and seed regions, prediction outcomes, and thresholds. Details for each parameter are described as follows.
 
@@ -199,9 +199,9 @@
 
 4. "phase5_merge_then_expand.ipynb"
 
-    Function: merges seed regions, then expands seed regions iteratively.
+    Function: the python code of merging and expanding seed regions.
   
-    Inputs: following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. The users can input their own data based on their specific applications. 
+    Inputs: following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. The users can input their own data based on their applications. 
 
        PATH3='./Data/VGG16_CRC_100K_tSNE_Spec.csv'--> the data file to specify the entire region index.
   
@@ -231,7 +231,7 @@
    
 7. "functions.zip"
 
-    Function: This is a zip file which includes accessory functions and parameters for "phase2_generate_seedregions_package.m" and "phase4_merge_seedregions_package.m". Please unzip this zip file into the same directory of "phase2_generate_seedregions_package.m" and "phase4_merge_seedregions_package.m".
+    Function: This is a zip file which includes accessory functions (.m files) and parameter values (.txt files) for "phase2_generate_seedregions_package.m" and "phase4_merge_seedregions_package.m". Please unzip this zip file into the same directory of "phase2_generate_seedregions_package.m" and "phase4_merge_seedregions_package.m".
 
 #
 (b) Execution procedures:
