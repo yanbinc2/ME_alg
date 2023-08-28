@@ -91,9 +91,9 @@
 
 2. "phase3_three_predicted_results.ipynb"
 
-   Function: the python code of generating three CNN predicted results, "original", "combinational" and "removal" for the evaluation of four scores.
+   Function: the Python code for generating three CNN predicted results: "original," "combinational," and "removal," for the evaluation of four scores.
 
-   Inputs: following files specified by the path are the input data. The input files presented here are provided as examples for instructional guidance. The users can input their own data based on their applications.
+   Inputs: following files specified by the path are the input data. The input files presented here are provided as examples for instructional guidance. Users can input their own data based on their applications.
    
        PATH1='./Data/NCT_VGG16_K200_seedinds_version2_valid.txt'  -->  the seed regions ("seedinds") given by the phase 2. 
   
@@ -199,9 +199,9 @@
 
 4. "phase5_merge_then_expand.ipynb"
 
-    Function: the python code of merging and expanding seed regions.
+    Function: the Python code for merging and expanding seed regions.
   
-    Inputs: following files specified by the path are the input data. The files presented here are provided as examples for instructional guidance. The users can input their own data based on their applications. 
+    Inputs: the following files specified by the path are the input data. The input files presented here are provided as examples for instructional guidance. Users can input their own data based on their applications. 
 
        PATH3='./Data/VGG16_CRC_100K_tSNE_Spec.csv'--> the data file to specify the entire region index.
   
